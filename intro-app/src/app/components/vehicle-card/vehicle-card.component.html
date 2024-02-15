@@ -1,0 +1,9 @@
+<div *ngIf="vehicle" class="card hover:shadow-lg hover:bg-blue-100 hover:cursor-pointer">
+    <div class="card-body">
+        <h3 class="text-3xl card-title">{{vehicle.make}} {{vehicle.model}}</h3>
+        <p class="text-2xl card-text">{{vehicle.year}}</p>
+        <button class="shadow btn btn-primary mt-4" (click)="select(vehicle)">
+            View
+        </button>            
+    </div>
+</div>
