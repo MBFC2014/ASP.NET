@@ -105,22 +105,36 @@ namespace ServerLecture.Controllers
         // Delete a product
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id){
-            //get the product with the given id
+            // Get the product with the given Id
             Product product = await _context.Products.FindAsync(id);
 
             if(product == null){
                 return NotFound();
             }
-            //if found, remove it from the database 
+
+            // If found, remove it from the database.
             _context.Products.Remove(product);
-            //save changes
+            // Save your changes
             await _context.SaveChangesAsync();
 
             return NoContent();
+
         }
 
-        // Get a single product
-        // [HttpGet("{id}")]
-        
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Product>> GetProduct(int id){
+            Product product = await _context.Products.FindAsync(id);
+            if(null == product){
+                return NotFound();
+            }
+
+            return Ok(product);
+        }
+        // Create a method which will find the product by the 
+        // id passed.
+        // If the product was not found, return NotFound();
+        // Otherwise, return Ok(product);
+
+
     }
 }

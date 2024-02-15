@@ -6684,24 +6684,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stein\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mcallisterj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stein\\Desktop\\ASP.NET\\ServerLecture\\ServerLecture.csproj",
+      "projectUniqueName": "C:\\Users\\mcallisterj\\Documents\\repos\\asp_dotnet_spring_2024_student\\ServerLecture\\ServerLecture.csproj",
       "projectName": "ServerLecture",
-      "projectPath": "C:\\Users\\stein\\Desktop\\ASP.NET\\ServerLecture\\ServerLecture.csproj",
-      "packagesPath": "C:\\Users\\stein\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stein\\Desktop\\ASP.NET\\ServerLecture\\obj\\",
+      "projectPath": "C:\\Users\\mcallisterj\\Documents\\repos\\asp_dotnet_spring_2024_student\\ServerLecture\\ServerLecture.csproj",
+      "packagesPath": "C:\\Users\\mcallisterj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mcallisterj\\Documents\\repos\\asp_dotnet_spring_2024_student\\ServerLecture\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\stein\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mcallisterj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

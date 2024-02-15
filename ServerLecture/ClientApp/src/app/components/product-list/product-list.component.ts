@@ -3,17 +3,19 @@ import { ProductService } from '../../services/product.service';
 import { AsyncPipe, NgFor } from '@angular/common';
 import { Product } from '../../models/product';
 import { Observable, of } from 'rxjs';
+import { ProductCardComponent } from '../product-card/product-card.component';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [NgFor, AsyncPipe],
+  imports: [NgFor, AsyncPipe, ProductCardComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
   
   private _productService: ProductService = inject(ProductService);
+  
 
   // public products: Product[] = [];
   public products: Observable<Product[]> = of([] as Product[]);
